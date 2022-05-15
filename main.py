@@ -11,6 +11,7 @@ while True:
 out = ''
 for l in ls:
 	c=0
+	c2 =0
 	for n in range(len(l)):
 		if l[n] == ' ':c+=1
 	if c == 1: 		out += '+'
@@ -20,5 +21,11 @@ for l in ls:
 	if c == 5: 		out += '>'
 	if c == 5: 		out += '<'
 	if c == 6: 		out += '?'
+	if c == 7:    out += ':'
+	if c == 8:    out += ';'
+	if c == 9:    out += '#'
+	if c == 10:    out += '`'
+	if c == 11:    out += '~'
+	
 with open('out.crz','a') as f:
 	f.write(out)
