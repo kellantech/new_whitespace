@@ -2,7 +2,7 @@ file1 = open('pr.txt', 'r')
 count = 0
 ls = []
 while True:
-
+		
     count += 1
     line = file1.readline()
     if not line:
@@ -29,6 +29,6 @@ for l in ls:
     if c == 13: out += '['
     if c == 14: out += ']'
     if c >= 15 and c < 25: out += str(c - 15)
-
+    if c == 26:out += '&'
 with open('out.crz', 'a') as f:
     f.write(out)
